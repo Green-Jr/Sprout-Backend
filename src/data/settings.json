@@ -1,0 +1,27 @@
+{
+    "name": "Backend Sprouts",
+    "port": 3030,
+    "path": "backend",
+
+    "logs": {
+        "path": "src/logs",
+        "level": "info",
+        "file": "msg.log"
+    },
+
+    "url_services": { 
+
+        "email": {
+            "otp": {
+                "url": "https://api.brevo.com/v3/smtp/email",
+                "template_id": 1
+            },
+            "redemption_template_id":2
+        },
+
+        "FreeMarket": {
+            "products": "https://api.mercadolibre.com"
+        }
+    }
+
+}
