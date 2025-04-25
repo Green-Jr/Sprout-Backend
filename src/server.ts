@@ -30,7 +30,7 @@ appServer.use(cors());
 
 appServer.use(cors({
   origin: (origin, callback) => {
-      if (!origin || origin === "http://localhost:5200") {
+      if (!origin || origin === "sprout-frontend.railway.internal") {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
